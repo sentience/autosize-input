@@ -64,7 +64,7 @@
       }
       ghost.style.cssText += elementCssText
       ghost.innerHTML = escape(str)
-      var width = window.getComputedStyle(ghost).width
+      var width = ghost.scrollWidth + "px"
       element.style.width = width
       return width
     }
